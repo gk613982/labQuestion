@@ -1,0 +1,67 @@
+/*
+ In the given class Anagram.java, implement the method findAnagrams() 
+such that
+ it finds all
+anagram sets from a list of words.
+For the following
+Method name:findAnagrams() Argument:String[] names Return type: void
+input: listen, silent, part, leloh, trap, tensil, hi, prat, hello
+Output :
+{listen,silent,tensil}
+{part,trap,prat}
+{leloh,hello} 
+ */
+
+package packtest17;
+
+import java.util.Scanner;
+
+
+public class GetAnagramString {
+	
+	public void findAnagrams(String []str)
+	{
+		int m,n=str.length,c=0,count=0;
+		String s="";
+		for(int i=0;i<n;i++)
+		{   count=0;
+	        for(int k=i+1;k<str.length-1;k++)
+	        {  
+	        	c=0;m=0;
+	        	for(int q=0;q<str[i].length();q++)
+	        	{
+			       for(int j=0;j<str[i].length();j++)
+			       {   
+				    if(str[i].charAt(q)==str[k].charAt(j))	 
+				   {
+					c++;
+					
+				   }
+				   
+			       }
+	        	}
+			   //System.out.println(c);
+			   if(c==str[i].length())
+			   {
+				 count++;  
+				 s=s+str[k]+",";
+			   }
+		   }
+	        if(count>0) System.out.println("{"+str[i]+","+s+"\s"+"}");
+	      }
+		
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter String array size=");
+		int n=sc.nextInt();
+		System.out.print("Enter ur String elements=");
+		String s[]=new String[n];
+		for(int i=0;i<n;i++)
+		 s[i]=sc.next();
+		new GetAnagramString().findAnagrams(s);
+		sc.close();
+	}
+
+}

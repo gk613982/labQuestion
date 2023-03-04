@@ -1,0 +1,41 @@
+package packfeb17;
+
+import java.util.Scanner;
+public class Encrypted {
+	
+	 String getencrypted(String s)
+		{
+		    String str="";
+		    int k;
+		    char ch;
+			
+			for(int i=0;i<s.length();i++)
+			{
+				k=(int)s.charAt(i)+9;
+			  if(k>122)
+				k=k-122+96;
+			      ch=(char)k;
+				str=str+ch;
+			}		
+			
+			return str;
+		}
+	
+	
+	
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter ur String=");
+		String s=sc.nextLine();
+		System.out.println(new encryption().getencrypted(s));
+		sc.close();
+		
+		
+		    
+		
+	}
+	
+
+}

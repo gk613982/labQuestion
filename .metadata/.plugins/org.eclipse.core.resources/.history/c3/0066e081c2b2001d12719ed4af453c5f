@@ -1,0 +1,15 @@
+
+public class Cake {
+
+	private String shape;
+	private String flavour;
+	private int qty;
+	private float price;
+	
+	protected Cake(String shape,String flavour,int qty)
+	{
+		this.shape=shape;
+		this.flavour
+	}
+
+}

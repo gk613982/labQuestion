@@ -1,0 +1,35 @@
+/*
+ Program: 2
+Write a Java program to demonstrate the functionality of ‘super’ keyword at
+1)	Variable level
+2)	Method level
+3)	Constructor level
+
+
+ */
+
+package pack21;
+
+public class Inheritance1 {
+
+	public static void main(String[] args) {
+
+
+
+	}
+
+}
+
+class ClassB
+{
+	int i=8;
+	void methB()
+	{
+		System.out.println("method level");
+	}
+	public ClassB()
+	{
+		System.out.println("Constructor level");
+	}
+}
+	

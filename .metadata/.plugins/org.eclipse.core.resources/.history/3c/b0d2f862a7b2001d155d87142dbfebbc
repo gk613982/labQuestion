@@ -1,0 +1,47 @@
+package pack21;
+
+import java.util.Scanner;
+public class MethodOverloading {
+	
+	public void Student(int a)
+	{
+		System.out.println("\t\t\tYour registration id is: "+a);
+		
+	}
+	public void Student(String DOB,long adhar)
+	{
+		System.out.println("\t\t\tYour Date of birth is: "+DOB);
+		System.out.println("\t\t\tYour adhaar is: "+adhar);
+	}
+	public void Student(String s) 
+	{
+		System.out.println("\t\t\tYour name is: "+s);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+	Scanner sc=new Scanner(System.in);
+	MethodOverloading A=new MethodOverloading();
+	System.out.print("\t\t\tEnter your registration  no: ");
+	int a=sc.nextInt();
+	sc.nextLine();
+	System.out.print("\t\t\tEnter your date of birth(dd-mm-yyyy): ");
+	String str=sc.nextLine();
+	System.out.print("\t\t\tEnter your Adhaar no: ");
+	long b=sc.nextLong();
+	sc.nextLine();
+	System.out.print("\t\t\tEnter your name: ");
+	String name=sc.nextLine();
+	System.out.println("====================================================================");
+	System.out.println("\t\t\tcheck your entered details once");
+	A.Student(a);
+	A.Student(name);
+	A.Student(str,b);
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,49 @@
+/*
+ Write a Java programs to demonstrate the following types of inheritances with some 
+ meaningful class name and real time scenarios
+1)	Single Inheritance
+2)	Multilevel Inheritance
+3)	Hierarchical Inheritance
+4)	
+
+ */
+package pack21;
+
+class ClassA1
+{
+	void meth1() 
+	{
+		System.out.println("ClassA methods");
+	}
+    
+}
+
+class ClassB extends ClassA1
+{
+	void meth2()
+	{
+		System.out.println("ClassB methods");
+	}
+	public static void main(String[] args) {
+		//System.out.println(single );
+		new ClassB().meth1();
+	}
+}
+
+
+ class ClassX extends ClassA1
+ {
+    
+	
+	public static void main(String[] args)
+	{
+		new ClassX().meth1();
+	}
+}
+ class ClassC extends ClassB
+ {
+	 public static void main(String[] args)
+		{
+			new ClassC().meth1();
+		}
+ }

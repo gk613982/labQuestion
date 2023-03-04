@@ -1,0 +1,44 @@
+package pack20;
+import java.util.Scanner;
+public class GetCountOfChar {
+			
+			 void getencrypted(String s)
+				{
+				   
+				    int count=0;
+				    
+				    for(int i=0;i<s.length();i++)
+				    {   
+				    	count=0;
+				    	for(int j=i;j<s.length();j++)
+				    	{
+				    		if(s.charAt(i)==s.charAt(j))
+				    			{count++;}
+				    	}
+				    	System.out.println(s.charAt(i)+":-->"+count);
+				    }
+					
+					
+					
+					
+				}
+			
+			
+			
+
+			public static void main(String[] args) {
+				
+				Scanner sc=new Scanner(System.in);
+				System.out.print("Enter ur String=");
+				String s=sc.nextLine();
+				new GetCountOfChar().getencrypted(s);
+				sc.close();
+				
+				
+				    
+				
+			}
+			
+}
+		
+

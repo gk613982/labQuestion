@@ -1,0 +1,10 @@
+package packtest17;
+
+public class RearangeCharactor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

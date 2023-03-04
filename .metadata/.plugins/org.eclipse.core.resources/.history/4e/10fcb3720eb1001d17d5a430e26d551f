@@ -1,0 +1,45 @@
+package pack20;
+
+import java.util.Scanner;
+
+public class GetSumIndigits{
+		
+		 void getencrypted(String s)
+			{
+			    String str="";
+			    int sum=0;
+			    
+			    
+				
+				for(int i=0;i<s.length();i++)
+				{
+					for(int j=i;j<s.length();j++)
+					{
+						if(s.charAt(i)>=48 && s.charAt(i)<=57 )
+							sum=sum+s.charAt(i);
+					}
+					System.out.println(sum+",");
+					
+				}
+				
+				
+			}
+		
+		
+		
+
+		public static void main(String[] args) {
+			
+			Scanner sc=new Scanner(System.in);
+			System.out.print("Enter ur String=");
+			String s=sc.nextLine();
+			//System.out.println(new GetSumIndigits().getencrypted(s));
+			sc.close();
+			
+			
+			    
+			
+		}
+		
+
+	}
